@@ -1,0 +1,36 @@
+{
+  "name": "weirdwideweb",
+  "version": "0.1.0",
+  "description": "A role playing game about web programmers",
+  "main": "readme.md",
+  "scripts": {
+    "build": "marked readme.md > index.html",
+    "deploy": "gh-pages-deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dethe/weirdwideweb.git"
+  },
+  "keywords": [
+    "game",
+    "rpg",
+    "parody"
+  ],
+  "author": "Dethe Elza",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "bugs": {
+    "url": "https://github.com/dethe/weirdwideweb/issues"
+  },
+  "homepage": "https://dethe.github.com/weirdwideweb",
+  "gh-pages-deploy": {
+    "staticpath": "index.html",
+    "prep": [
+      "build"
+    ],
+    "noprompt": true
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.1.1",
+    "marked": "^0.3.2"
+  }
+}
