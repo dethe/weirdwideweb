@@ -23,7 +23,7 @@
   },
   "homepage": "https://dethe.github.com/weirdwideweb",
   "gh-pages-deploy": {
-    "staticpath": "index.html",
+    "staticpath": ".",
     "prep": [
       "build"
     ],
